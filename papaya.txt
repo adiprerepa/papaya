@@ -1,0 +1,75 @@
+~ APCS Second Semester Project 2021
+~ Aditya Prerepa Period 1
+
+~ setting an integer and string
+def a = 10
+def b = "foo"
+
+~ print them
+print $a
+print $b
+
+~ prompt from stdin for integer
+printqstr "please enter an integer"
+def z = readint()
+
+~ prompt from stdin for string
+printqstr "please enter a string"
+def y = readstring()
+
+~ print the int and string
+print $z
+print $y
+
+printqstr "my int:"
+print $a
+
+~ do addition and save in d, and then print
+def d = $a + $z
+printqstr "my int + your int:"
+print $d
+~ do subtraction and save in d, then print
+def d = $a - $z
+printqstr "my int - your int:"
+print $d
+~ do multiplication and save in d, then print
+def d = $a * $z
+printqstr "my int * your int:"
+print $d
+~ do division and save in d, then print
+def d = $a / $z
+printqstr "my int / your int:"
+print $d
+~ do mod and save in d, then print
+def d = $a % $z
+printqstr "my int % your int:"
+print $d
+
+~ check if my int and the int entered are the same
+if [$a == $z]
+printqstr "my int and your int are the same!"
+endif
+
+~ check if my int and the int entered are different
+if [$a != $z]
+printqstr "my int and your int are not the same :("
+endif
+
+~ check if my integer is greater than the integer they entered
+if [$a > $z]
+printqstr "my int is bigger than yours :)"
+endif
+
+~ check if my integer is greater than the integer they entered
+if [$a < $z]
+printqstr "my int is less than yours :("
+endif
+
+~ while loop from 10->20
+def f = 20
+while [$f > $a]
+~ print and increment a until it reaches 20
+print $a
+printqstr "increasing my value until I reach 20"
+def a = $a + 1
+endwhile
